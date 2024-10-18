@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="script.css">
+</head>
+
+<body>
+
+    <div class="main-design">
+        <div class="body-container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <p class="fst-italic">CloudPoit</p>
+                    <div class="date-time"></div>
+                    <form id="search-form" class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" id="search-text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" id="search-btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="all">
+            <div class="row" id="clock-main">
+                <div class="col" id="clockall">
+                    <div id="clock">
+                        <p class="hour fs-5">00:</p>
+                        <p class="fs-5">:</p>
+                        <p class="min fs-5">00:</p>
+                        <p class="fs-5">:</p>
+                        <p class="sec fs-5">00</p>
+                        <p class="am-pm fs-5">am</p>
+                    </div>
+                    <div class="sunrise">
+                        <img src="icons8-sunrise-60.png" class="img" alt="">
+                        <p class="rise-hour fs-5">00:</p>
+                        <p class="rise-min fs-5">00</p>
+                        <p class="am fs-5">am</p>
+                    </div>
+                    <div class="sunset">
+                        <img src="icons8-sunset-60.png" class="img" alt="">
+                        <p class="set-hour fs-5">00:</p>
+                        <p class="set-min fs-5">00</p>
+                        <p class="pm fs-5">pm</p>
+                    </div>
+                </div>
+
+                <div class="col max-min-temp">
+                    <div class="maxtemp">
+                        <img src="fever.png" alt="">
+                        <p class="max-temp fs-1">00</p>
+                    </div>
+                    <div class="mintemp">
+                        <img src="low-temperature.png" alt="">
+                        <p class="min-temp fs-1">00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row container text-center" id="temp-year">
+                <div class="col weather-type-main container text-center">
+                    <p class="weather-type fs-4">haze</p>
+                    <div class="weather-temp container text-center">
+                        <img src="01d.png" class="image" alt="">
+                        <p class="temp fs-1">30</p>
+                    </div>
+                    <p class="place fs-1">Kolkata</p>
+                </div>
+                <div class="col" id="year-all">
+                    <p class="day fs-1">00</p>
+                    <p class="month fs-1">00</p>
+                    <p class="year fs-1">00</p>
+                    <p class="week">Monday</p>
+                </div>
+
+                <div class="row container text-center element-main">
+                    <div class="row row-cols-4 all-element">
+                        <div class="col element" id="humidity">
+                            <p class="fs-6">Humidity</p>
+                            <div class="humidity info" id="weather-des">
+                                <img src="humidity (2).png" class="img-element" alt="">
+                                <p class="hmudity-tem fs-4">0</p>
+                            </div>
+                        </div>
+                        <div class="col element">
+                            <p class="fs-6">Pressure</p>
+                            <div class="airpresure info" id="weather-des">
+                                <img src="air.png" class="img-element" alt="">
+                                <p class="airpresure-temp fs-4">00</p>
+                            </div>
+                        </div>
+                        <div class="col element">
+                            <p class="fs-6">Visibility</p>
+                            <div class="Visibility info" id="weather-des">
+                                <img src="visibility.png" class="img-element" alt="">
+                                <p class="visibility-temp fs-5">0</p>
+                            </div>
+                        </div>
+                        <div class="col element">
+                            <p class="fs-6">Feels Like</p>
+                            <div class="feel-like info" id="weather-des">
+                                <img src="temparature.png" class="img-element" alt="">
+                                <p class="fill-parcent fs-6">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
